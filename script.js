@@ -77,14 +77,20 @@ function findLastEvenNum() {
 //Bài 6
 function swapNum() {
     var swap;
-    var index1 = document.getElementById("txtIndex1").value;
-    var index2 = document.getElementById("txtIndex2").value;
+    var index1 = +document.getElementById("txtIndex1").value;
+    var index2 = +document.getElementById("txtIndex2").value;
     var arraySwap = JSON.parse(JSON.stringify(arrayNum));
 
-    swap = arraySwap[index1];
-    arraySwap[index1] = arraySwap[index2];
-    arraySwap[index2] = swap;
-    document.getElementById("resultEx6").innerHTML = arraySwap;
+    if ((Number.isInteger(index1) && Number.isInteger(index2))
+        && (index1 <= arraySwap.length - 1 && index1 >= 0)
+        && (index2 <= arraySwap.length - 1 && index2 >= 0)) {
+        swap = arraySwap[index1];
+        arraySwap[index1] = arraySwap[index2];
+        arraySwap[index2] = swap;
+        document.getElementById("resultEx6").innerHTML = arraySwap;
+    } else {
+        document.getElementById("resultEx6").innerHTML = "Kiểm tra lại vị trí nhập vào!";
+    }
 }
 
 
