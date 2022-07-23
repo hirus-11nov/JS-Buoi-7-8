@@ -64,13 +64,14 @@ function findMinPosNum() {
 //Bài 5
 function findLastEvenNum() {
     var lastEvenNum;
-    for (var i = 0; i < arrayNum.length; i++) {
+    for (var i = arrayNum.length - 1; i >= 0 ; i--) {
         if (arrayNum[i] % 2 === 0) {
             lastEvenNum = arrayNum[i];
+            document.getElementById("resultEx5").innerHTML = "Số chẵn cuối cùng trong mảng là: " + lastEvenNum;
+            break;
         }
-    }
-    lastEvenNum >= 0 ? document.getElementById("resultEx5").innerHTML = "Số chẵn cuối cùng trong mảng là: " + lastEvenNum :
         document.getElementById("resultEx5").innerHTML = "-1";
+    }
 }
 
 //Bài 6
