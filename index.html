@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        .row,
+        .alert {
+            width: 50%;
+        }
+    </style>
+</head>
+  <body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-6">
+                <input id="txtNumN" type="number" class="form-control" placeholder="Nhập số N">
+            </div>
+            <div class="col-3">
+                <button class="btn btn-success" onclick="addNumber()">Thêm số</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-danger" onclick="deleteArray()">Xóa mảng</button>
+            </div>
+        </div>
+        <div id="txtArray" class="alert alert-success mt-2">
+        </div>
+        <div class="py-3">
+            <h3>Bài 1: Tính tổng các số dương trong mảng</h3>
+            <div id="resultEx1" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="calcSum()">Tính tổng</button>
+        </div>
+        <div class="py-3">
+            <h3>Bài 2: Đếm các số dương trong mảng</h3>
+            <div id="resultEx2" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="countPosNum()">Xem kết quả</button>
+        </div>
+        <div class="py-3">
+            <h3>Bài 3: Tìm số nhỏ nhất trong mảng</h3>
+            <div id="resultEx3" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="findMinNum()">Xem kết quả</button>
+        </div>
+        <div class="py-3">
+            <h3>Bài 4: Tìm số dương nhỏ nhất trong mảng</h3>
+            <div id="resultEx4" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="findMinPosNum()">Xem kết quả</button>
+        </div>
+        <div class="py-3">
+            <h3>Bài 5: Tìm số chẵn cuối cùng trong mảng</h3>
+            <div id="resultEx5" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="findLastEvenNum()">Xem kết quả</button>
+        </div>
+        <div class="py-3">
+            <h3>Bài 6: Đổi chỗ 2 giá trị trong mảng theo vị trí</h3>
+            <div class="row ms-1">
+                <input id="txtIndex1" type="number" class="col-6 form-control my-1" placeholder="Nhập số vị trí 1">
+                <input id="txtIndex2" type="number" class="col-6 form-control" placeholder="Nhập số vị trí 2">
+            </div>
+            <div id="resultEx6" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="swapNum()">Xem kết quả</button>
+        </div>
+        <div class="py-3">
+            <h3>Bài 7: Sắp xếp mảng tăng dần</h3>
+            <div id="resultEx7" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="sortArray()">Xem kết quả</button>
+        </div>
+        <div class="py-3">
+            <h3>Bài 8: Tìm số nguyên tố đầu tiên trong mảng</h3>
+            <div id="resultEx8" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="findFirstPrime()">Xem kết quả</button>
+        </div>
+        <div class="py-3">
+            <h3>Bài 9: Tìm số nguyên trong mảng số thực</h3>
+            <div class="row">
+                <div class="col-9">
+                    <input id="txtNum" type="number" class="form-control" placeholder="Nhập số">
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-success" onclick="addRealNumber()">Thêm số</button>
+                </div>
+            </div>
+            <div id="txtRealArray" class="alert alert-success mt-2">
+            </div>
+            <div id="resultEx9" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="findIntNum()">Đếm số nguyên</button>
+        </div>
+        <div class="py-3">
+            <h3>Bài 10: So sánh số lượng số âm và số nguyên</h3>
+            <div id="resultEx10" class="alert alert-success mt-2">
+            </div>
+            <button class="btn btn-success" onclick="comparePosNegNum()">So sánh</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
