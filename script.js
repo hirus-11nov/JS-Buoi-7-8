@@ -59,6 +59,21 @@ function findMinPosNum() {
     }
     min > 0 ? document.getElementById("resultEx4").innerHTML = "Số dương nhỏ nhất trong mảng là: " + min :
         document.getElementById("resultEx4").innerHTML = "Không có số dương trong mảng";
+
+    //---Another way!
+    // var posNum = []
+    // for (var i = 0; i < arrayNum.length; i++) {
+    //     if (arrayNum[i] > 0) {
+    //         posNum.push(arrayNum[i]);
+    //     }
+    // }
+    // if (posNum.length) {
+    //     posNum.sort()
+    //     min = posNum[0];
+    //     document.getElementById("resultEx4").innerHTML = "Số dương nhỏ nhất trong mảng là: " + min;
+    // } else {
+    //     document.getElementById("resultEx4").innerHTML = "Không có số dương trong mảng";
+    // }
 }
 
 //Bài 5
