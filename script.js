@@ -47,6 +47,13 @@ function findMinNum() {
         }
     }
     document.getElementById("resultEx3").innerHTML = "Số nhỏ nhất trong mảng là: " + min;
+
+    //--Another way
+    // var min;
+    // var copiedArr = JSON.parse(JSON.stringify(arrayNum));
+    // copiedArr.sort();
+    // min = copiedArr[0];
+    // document.getElementById("resultEx3").innerHTML = "Số nhỏ nhất trong mảng là: " + min;
 }
 
 //Bài 4
@@ -79,7 +86,7 @@ function findMinPosNum() {
 //Bài 5
 function findLastEvenNum() {
     var lastEvenNum;
-    for (var i = arrayNum.length - 1; i >= 0 ; i--) {
+    for (var i = arrayNum.length - 1; i >= 0; i--) {
         if (arrayNum[i] % 2 === 0) {
             lastEvenNum = arrayNum[i];
             document.getElementById("resultEx5").innerHTML = "Số chẵn cuối cùng trong mảng là: " + lastEvenNum;
@@ -87,6 +94,16 @@ function findLastEvenNum() {
         }
         document.getElementById("resultEx5").innerHTML = "-1";
     }
+
+    //--Another way
+    // var evenNum = [];
+    // for (var i = 0; i < arrayNum.length; i++) {
+    //     if (arrayNum[i] % 2 === 0) {
+    //         evenNum.push(arrayNum[i]);
+    //     }
+    // }
+    // evenNum.length ? document.getElementById("resultEx5").innerHTML = "Số chẵn cuối cùng trong mảng là: " + evenNum[evenNum.length - 1]
+    // : document.getElementById("resultEx5").innerHTML = "-1";
 }
 
 //Bài 6
